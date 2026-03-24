@@ -1,8 +1,7 @@
 resource "aws_instance" "name" {
-  ami           =  var.ami # Example AMI ID, replace with a valid one
-  instance_type =  var.instance_type
+  ami           = ami-0ec10929233384c7f # Example AMI ID, replace with a valid one
+  instance_type =  t3.micro
 tags = {
-Name = var.instance_name
-
+Name = sahithi
 }
   }
